@@ -1,0 +1,59 @@
+doctype html
+html
+  head
+   <title>#{title}</title>
+    style
+      include ../static/style.css
+  body
+    nav#navbar 
+      ul 
+         div#logo
+          img(src="../statics/img/logo.png", alt="no", srcset="")
+          | HBD
+         li #[a(href="/") home]
+         li #[a(href="/") about] 
+         li #[a(href="/") contact us]
+         li #[a(href="/") responceability]
+
+    section#introsection
+      
+      div hello guys welcome to my dance acedmy fully exp.....
+       div.small  eat sleep dance reapeat rule
+        
+    secton#missionsection 
+      h1 mission section
+     
+      div.card 
+       h2  dance perfection 
+        div.img-box 
+          div.card-img
+              img(src="../statics/img/1.png", alt="no", srcset="")
+          div.card-content   
+              p voluptatibus nisi libero placeat eos  fugiat id nisi cupiditate.
+      div.card
+       h2 dance as you like
+        div.img-box 
+          div.card-img
+              img(src="../statics/img/2.png", alt="no", srcset="")
+          div.card-content   
+              p voluptatibus nisi libero placeat eos  fugiat id nisi cupiditate. 
+      div.card 
+       h2 coupple dance favrits  
+        div.img-box 
+          div.card-img
+              img(src="../statics/img/3.png", alt="no", srcset="")
+          div.card-content   
+              p voluptatibus nisi libero placeat eos  fugiat id nisi cupiditate.
+    section#sponcersection    
+     h2  sponcer section here
+     div#sponcer-img
+        img(src="../statics/img/logo1.png", alt="no", srcset="")
+        img(src="../statics/img/logo2.png", alt="no", srcset="")
+        img(src="../statics/img/logo3.png", alt="no", srcset="")
+        img(src="../statics/img/logo4.png", alt="no", srcset="")
+       
+    
+    footer#footer 
+     | footer is here
+    script
+      include ../static/index.js

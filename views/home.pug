@@ -1,0 +1,54 @@
+extends base.pug
+
+block scripts 
+   script(src='/static/index.js')
+block style  
+  style 
+   include ../static/style.css
+   include ../static/contactstyle.css
+           
+block content
+   nav#navbar 
+      ul 
+         div#logo
+          img(src="../statics/img/logo.png", alt="no", srcset="")
+          | HBD
+         li #[a(href="/") home]
+         li #[a(href="/") about] 
+         li #[a(href="/contact") contact us]
+         li #[a(href="/") responceability]
+
+
+   secton#missionsection 
+      h1 mission section
+     
+      div.card 
+       h2  dance perfection 
+        div.img-box 
+          div.card-img
+              img(src="../statics/img/1.png", alt="no", srcset="")
+          div.card-content   
+              p voluptatibus nisi libero placeat eos  fugiat id nisi cupiditate.
+      div.card
+       h2 dance as you like
+        div.img-box 
+          div.card-img
+              img(src="../statics/img/2.png", alt="no", srcset="")
+          div.card-content   
+              p voluptatibus nisi libero placeat eos  fugiat id nisi cupiditate. 
+      div.card 
+       h2 coupple dance favrits  
+        div.img-box 
+          div.card-img
+              img(src="../statics/img/3.png", alt="no", srcset="")
+          div.card-content   
+              p voluptatibus nisi libero placeat eos  fugiat id nisi cupiditate.
+   section#sponcersection    
+     h2  sponcer section here
+     div#sponcer-img
+        img(src="../statics/img/logo1.png", alt="no", srcset="")
+        img(src="../statics/img/logo2.png", alt="no", srcset="")
+        img(src="../statics/img/logo3.png", alt="no", srcset="")
+        img(src="../statics/img/logo4.png", alt="no", srcset="")
+   script
+      include ../static/index.js
